@@ -6,7 +6,7 @@ This is a Frontend Development project Designed and Developed by me using HTML, 
 
 [Link to Live Project](https://modernslider.vercel.app/)
 
-![slider](/imges/slider.png)
+![slider](/images/slider.png)
 
 ## Technologies Used
 
