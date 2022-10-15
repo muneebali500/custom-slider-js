@@ -1,0 +1,132 @@
+:root {
+  /* --bodyBgClr: linear-gradient(30deg, #d39250, #b7ac38); */
+  --bodyBgClr: linear-gradient(-15deg, #a506b9, #660745);
+  --textClr: #000;
+  --btnBgClr: linear-gradient(-15deg, #a506b9, #660745);
+  --clrWhite: #fff;
+  --clrBlack: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.3;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bodyBgClr);
+}
+
+.customer-parent {
+  display: flex;
+  width: 70rem;
+  max-width: 90%;
+  position: relative;
+}
+
+.customers {
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.customers::-webkit-scrollbar {
+  display: none;
+}
+
+.customer {
+  padding: 1.4rem;
+  box-shadow: 1vmin 0 1vmin rgba(0, 0, 0, 0.2),
+    -1vmin 0 1vmin rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 5px;
+  min-width: 16.75rem;
+  background-color: var(--clrWhite);
+  color: var(--textClr);
+}
+
+.customer-photo {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 50%;
+}
+
+.customer-name {
+  font-size: 3vmin;
+  margin: 2vmin;
+}
+
+.customer-comments {
+  font-size: 2.2vmin;
+}
+
+.slide-btns {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.slide-btn-right,
+.slide-btn-left {
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 4vmin;
+  height: 6vmin;
+  width: 6vmin;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--btnBgClr);
+  color: var(--clrWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.5vmin 0.5vmin 1vmin rgba(0, 0, 0, 0.2),
+    -0.5vmin -0.5vmin 1vmin rgba(0, 0, 0, 0.1);
+}
+
+.slide-btn-left {
+  left: -2.5vmin;
+}
+
+.slide-btn-right {
+  right: -2.5vmin;
+}
+
+.circle-container {
+  list-style: none;
+  position: absolute;
+  bottom: -7vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1vmin;
+}
+
+.circle {
+  height: 2vmin;
+  width: 2vmin;
+  border: 1.5px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0.5vmin 0.5vmin 1vmin rgba(0, 0, 0, 0.2),
+    -0.5vmin -0.5vmin 1vmin rgba(0, 0, 0, 0.1);
+  /* background-color: var(--cardBgClr); */
+}
