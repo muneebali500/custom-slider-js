@@ -35,6 +35,7 @@ function calculateSlideAmount() {
 function createCircles() {
   elementsInViewport = 0;
   customersList.scrollLeft = 0;
+  prevElementIndex = 0;
 
   customers.forEach((element) => {
     if (checkVisible(element)) {
